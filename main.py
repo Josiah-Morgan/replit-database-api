@@ -31,7 +31,7 @@ def require_api_key(view_func):
 def home():
   return str(len(replit.db.keys()))
 
-
+# mass deleting, for debuging
 @app.route('/f', methods = ['GET'])
 @require_api_key
 def f():
